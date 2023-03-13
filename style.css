@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+#corpo{
+    padding: 0px;
+}
+div#imagemdefundo{
+    background-image: url(imagens/div-topo2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    margin: 114px auto 0px auto;
+    height: 200px;
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+}
+h1{
+    color: rgb(192, 0, 0);
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(255, 255, 255, 0.441);
+    width: 95vw;
+    text-align: center;
+    padding-top: 62px;
+}
+h1.titulo{
+    color: white;
+    background-color: rgb(192, 0, 0);
+    padding: 10px;
+    width: 100vw;
+    text-shadow: 1px 1px 1px black;
+}
+p{
+    text-align: justify;
+    padding: 10px;
+    text-indent: 25px;
+}
+section.video{
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    width: 95vw;
+    height: 400px;
+}
+img{
+    padding: 0px;
+    width: 100vw;
+}
+a.naoparece{
+    text-decoration: none;
+}
+section.imagemdupla{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+section.imagemdupla img{
+    width: 49vw;
+    padding: 0px;
+    border: 2px solid rgb(192, 0, 0);
+    margin-bottom: 10px;
+}
+aside{
+    padding-left: 10px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: x-small;
+}
+section.video{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+embed{
+    width: 100vw;
+    height: 194px;
+}

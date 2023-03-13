@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Liverpool</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container-lg">
-        <nav class="navbar fixed-top" style="background-color: rgb(192, 0, 0);">
+    <div class="container-lg" id="corpo">
+        <nav class="navbar fixed-top" style="background-color: rgb(192, 0, 0); padding: 10px;">
             <div class="container-fluid">
               <a class="navbar-brand" href="home.html"><img src="imagens/Liverpool_FC-logo-editado.png" alt=" escudo liverpool" style="width: 65px;"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" style="color: white;">
-                <span class="navbar-toggler-icon" ></span>
+              <button class="navbar-toggler text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon text-light"></span>
               </button>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: rgb(192, 0, 0);">
                 <div class="offcanvas-header" >
@@ -48,8 +49,86 @@
               </div>
             </div>
           </nav>
-
+      <div id="imagemdefundo">
+        <h1>Liverpool FC</h1>
+      </div>
+      <h1 class="titulo">Calor da torcida</h1>
+      <p>Uma torcida extremamente apaixonada por futebol, ao ponto de fazer diversas loucuras pelo clube. Uma torcida que ama rock e até mesmo a forma do time jogar, dizem que é no estilo Rock And Roll, com isso, adotaram a música You'll Never Walk Alone, da banda Gerry And The Pacemakers, como hino (não oficial) alternativo da equipe</p>
+      <section class="video">
+        <iframe width="90vw" height="315" src="https://www.youtube.com/embed/8WIdr9yGuxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </section>
+      <p>São 180 milhões de torcedos dos Reds (assim como o clube é conhecido). Acostumada a vaiar o hino da Champions League, por conta, da reedição da final, mas, também, por causa de um documento de 220 páginas de uma investigação independente que exonerou os torcedores de culpa.</p> 
     </div>
+    <a href="#" class="naoparece">
+      <h1 class="titulo">Anfield Road</h1>
+    </a>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagens/anfield-ceubonito-editado.jpg" class="d-block w-100" alt="Anfield">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/Anfield_Stadium_fora.jpg" class="d-block w-100" alt="Anfield">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/anfield_fora3.jpg" class="d-block w-100" alt="Anfield" style="height: 280px;">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste maiores quod dignissimos impedit laboriosam ipsum deserunt repudiandae voluptatibus odit illo, optio animi ducimus fugiat ipsam perspiciatis! Enim a dolores nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptas magni sunt assumenda culpa illo architecto vero, omnis aliquid officia repellat recusandae, voluptate tempora modi, qui quam expedita doloremque! Vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, doloribus odio nisi, repellendus aliquam recusandae neque maiores provident libero numquam omnis totam reprehenderit quam. Qui sequi et dolore quia impedit.</p>
+    <h1 class="titulo">Jürgen Klopp</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quidem. Autem officia, aperiam, numquam quod esse architecto distinctio adipisci suscipit fugit reprehenderit cupiditate impedit ipsum! Iusto voluptates aliquam accusantium expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolor repellat, numquam dolores exercitationem debitis sit ratione quidem, consectetur officiis perferendis ex. Reprehenderit cum officia iure esse? Voluptatem, asperiores dolor.</p>
+    <section class="imagemdupla">
+      <img src="imagens/Jurgen_Klopp_LFC_Parade_2019-editado.jpg" alt="Klopp" onclick="clickFoto()" id="fg">
+      <img src="imagens/klopp_no_muro-editado.jpg" alt="Klopp" onclick="clickFoto2()" id="fg2">
+    </section>
+    <aside>clique na imagem duas vezes, para visualiza-lá maior</aside>
+    <h1 class="titulo">Liverpool City</h1>
+    <img src="imagens/liverpool-city.jpeg" alt="Cidade de Liverpool">
+    <aside style="margin-top: 5px;">Cidade de Liverpool - Reino Unido</aside>
+    <section class="video">
+      <embed src="videos/cidade_de_liverpool.mp4" type="">
+    </section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, esse repellat harum sunt fuga repudiandae, explicabo similique, quae labore nemo veniam officiis eligendi magni dolores praesentium a eius expedita sed!</p>
+    <section class="video">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152201.77188279672!2d-3.0561413976868286!3d53.41209544266922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487adf8a647060b7%3A0x42dc046f3f176e01!2sLiverpool%2C%20Reino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1678502674011!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <h1 class="titulo">Mohamed Salah</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, aut placeat obcaecati facere pariatur quasi sapiente architecto illum maxime sunt perferendis tempora accusamus harum culpa iure! Nobis, nulla. Blanditiis, voluptate!</p>
+    <img src="imagens/salah-editado.jpg" alt="Mohamed Salah" style="margin-bottom: 1px;">
+    <div class="card text-bg-dark" style="border-top-right-radius: 0px; border-top-left-radius: 0px;">
+      <img src="imagens/fundo_rodapé1.jpg" class="card-img" alt="..." style="border-top-right-radius: 0px; border-top-left-radius: 0px; height: 150px;">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    </div>
+    <script>
+      function clickFoto(){
+            if(fg.style.width == "49vw"){
+                fg.style.width = "100vw"
+            }else{
+                fg.style.width = "49vw"
+            }
+        }
+        function clickFoto2(){
+            if(fg2.style.width == "49vw"){
+                fg2.style.width = "100vw"
+            }else{
+                fg2.style.width = "49vw"
+            }
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
