@@ -71,8 +71,35 @@ section.video{
     padding: 5px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 embed{
     width: 100vw;
     height: 194px;
+}
+div.card-img-overlay a{
+    color: white;
+    background-color: rgb(86, 1, 1);
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 5px;
+}
+div.card-img-overlay a:hover{
+    background-color: rgb(243, 136, 136);
+    color: rgb(86, 1, 1);
+    font-weight: bold;
+}
+h2.subtitulo{
+    padding: 10px;
+    text-align: center;
+    color: rgb(192, 0, 0);
+    text-shadow: 2px 2px 8px #000000c2;
+}
+section.ano2005{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+td#united{
+    font-size: min(20px, 4vw);
 }
