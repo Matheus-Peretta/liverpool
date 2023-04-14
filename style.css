@@ -103,3 +103,17 @@ section.ano2005{
 td#united{
     font-size: min(20px, 4vw);
 }
+#logopremierleague{
+    width: 80vw;
+}
+#timeliverpool{
+    width: 70px;
+    height: 95.55px;
+}
+#timevisitante{
+    width: 90px;
+    height: 95.55px;
+}
+p#aparecerjogo{
+    text-align: center;
+}
