@@ -12,4 +12,10 @@ function mostrarJogo(){
     logopremier.src = 'imagens/premier-league-logo.jpg'
     logopremier.style.height = '150px'
     aparecerjogo.innerHTML = '<img src="imagens/Leeds_United_Logo.png" id="timevisitante"> x <img src="imagens/Liverpool_FC-logo-editado.png" id="timeliverpool">'
+
+    if(detalhespartida.style.display == 'block'){
+        detalhespartida.style.display = 'none'
+    } else{
+        detalhespartida.style.display = 'block'
+    }
 }
