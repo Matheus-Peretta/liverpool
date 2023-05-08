@@ -56,17 +56,35 @@
             <h1>Temporada Atual</h1>
         </div>
         <!-- PARTIDAS -->
-          <div class="jogos">
-            <h1 class="titulo">Próximas Partidas</h1>
-            <p onclick="mostrarJogo()" class="escritapartida">Liverpool x Leeds United</p>
-            <p onclick="mostrarJogo()" class="escritapartida">Liverpool x Leeds United</p>
-            <p onclick="mostrarJogo()" class="escritapartida">Liverpool x Leeds United</p>
-            <p onclick="mostrarJogo()" class="escritapartida">Liverpool x Leeds United</p>
+        <aside id="proximosJogos">Próximos jogos, clique para saber mais</aside>
+        <p id="jogos">
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Liverpool x Leicester
+          </a>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Liverpool x Chelsea
+          </a>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Liverpool x Chelsea
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body" style="background-color: rgb(192, 0, 0);">
+            <img src="imagens/premier-league-logo.jpg" alt="">
+            <img src="imagens/Leeds_United_Logo.png" alt="" class="timesJogosTemporada">
+            <img src="imagens/Liverpool_FC-logo-editado.png" alt="" class="timesJogosTemporada" style="height: 65px;">
           </div>
-          <div id="detalhespartidas"> 
-            <img src="" alt="" id="logopremierleague">
-            <p id="aparecerjogo"></p>
+        </div>
+        <div class="collapse" id="collapseExample2">
+          <div class="card card-body">
+            champions league
           </div>
+        </div>
+        <div class="collapse" id="collapseExample3">
+          <div class="card card-body">
+            fa cup
+          </div>
+        </div>
         <!-- FIM PARTIDAS -->  
         <!-- INÍCIO RODAPÉ -->
         <div class="card text-bg-dark" style="border-top-right-radius: 0px; border-top-left-radius: 0px;">
