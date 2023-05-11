@@ -19,3 +19,11 @@ function mostrarJogo(){
         detalhespartida.style.display = 'block'
     }
 }
+function mostrarClassificacao(){
+    let pegandoId = document.getElementById('aparecerClassificacao')
+    if(pegandoId.style.display == "none"){
+        pegandoId.style.display = "block"
+    } else {
+        pegandoId.style.display = "none"
+    }
+}
