@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@NaN,0,0,0" />
     <link rel="stylesheet" href="style.css">
     <script src="./js/temporada.js"></script>
 </head>
-<body>
+<body onload="carregar()">
     <div class="container-lg" id="corpo">
         <!-- INÍCIO NAVBAR -->
         <nav class="navbar fixed-top" style="background-color: rgb(192, 0, 0); padding: 10px;">
@@ -60,127 +62,16 @@
             <h1>Temporada Atual</h1>
         </div>
         <!-- PARTIDAS -->
-        <aside id="proximosJogos">Próximos jogos, clique para saber mais</aside>
-        <p id="jogos">
-          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Liverpool x Leicester
-          </a>
-          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Liverpool x Chelsea
-          </a>
-          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Liverpool x Chelsea
-          </a>
-        </p>
-        <div class="collapse" id="collapseExample">
-          <div class="card card-body" id="pai">
-            <img src="imagens/premier-league-logo.jpg" alt="" class="premierLogo">
-            <img src="imagens/LeicesterCity_logo2014.png" alt="" class="timesJogosTemporada" style="height: 70px; width: 63px;"><span style="padding-top: 42px; padding-right: 15px; color: white; font-weight: bolder;">X</span>
-            <img src="imagens/Liverpool_FC-logo-editado.png" alt="" class="timesJogosTemporada" style="height: 65px;">
-            <div class="flexitem">
-              <span class="material-symbols-outlined">
-              stadium
-              </span>
-              King Power Stadium
-            </div>
-            <div class="flexitem"><span class="material-symbols-outlined">
-              alarm_smart_wake
-              </span>16:00 horas</div>
-            <div class="flexitem"><span class="material-symbols-outlined">
-              calendar_apps_script
-              </span>Segunda 15/05</div>
-            <div class="flexitem"><Button class="tabelaCamp" onclick="mostrarClassificacao()">CLASSIFICAÇÃO</Button></div>
-            <div id="aparecerClassificacao">
-              <table class="table" style="margin-top: 20px; color: white;">
-                <thead>
-                  <tr>
-                    <th scope="col">Posição</th>
-                    <th scope="col">P</th>
-                    <th scope="col">J</th>
-                    <th scope="col">V</th>
-                    <th scope="col">D</th>
-                    <th scope="col">E</th>
-                    <th scope="col">SG</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1<img src="imagens/Manchester_City_FC_badge.svg" alt="" class="imgTimesClassificacao">City</th>
-                    <td>82</td>
-                    <td>34</td>
-                    <td>26</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>58</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2<img src="#" alt="" class="imgTimesClassificacao">Arsenal</th>
-                    <td>81</td>
-                    <td>35</td>
-                    <td>25</td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td>44</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3<img src="#" alt="" class="imgTimesClassificacao">Newcastle</th>
-                    <td>65</td>
-                    <td>34</td>
-                    <td>18</td>
-                    <td>5</td>
-                    <td>11</td>
-                    <td>32</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4<img src="#" alt="" class="imgTimesClassificacao">United</th>
-                    <td>63</td>
-                    <td>34</td>
-                    <td>19</td>
-                    <td>9</td>
-                    <td>6</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5<img src="imagens/Liverpool_FC-logo-editado.png" alt="" class="imgTimesClassificacao">Liverpool</th>
-                    <td>62</td>
-                    <td>35</td>
-                    <td>18</td>
-                    <td>9</td>
-                    <td>8</td>
-                    <td>25</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">6<img src="#" alt="" class="imgTimesClassificacao">Tottenham</th>
-                    <td>57</td>
-                    <td>35</td>
-                    <td>17</td>
-                    <td>12</td>
-                    <td>6</td>
-                    <td>7</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">7<img src="#" alt="" class="imgTimesClassificacao">Newcastle</th>
-                    <td>55</td>
-                    <td>33</td>
-                    <td>16</td>
-                    <td>10</td>
-                    <td>7</td>
-                    <td>18</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+        <div class="container">
+          <aside style="padding: 15px; margin-bottom: 0px; height: 0px; width: 100vw; text-align: center;">Próximos jogos, clique para saber mais</aside>
+          <span onclick="partida()" class="jogos" style="align-self: self-start; flex-basis: 45%;" id="priPartida">Liverpool <br> x <br> Leicester City</span>
+          <span onclick="partida2()" class="jogos" style="flex-basis: 45%;" id="segunPartida">Liverpool <br> x<br>  Aston Villa</span>
+          <span onclick="partida3()" class="jogos" style="flex-basis: 45%;">Liverpool <br> x<br>  Souhamptom</span>
+          <span onclick="partida3()" class="jogos" style="flex-basis: 45%;">Outro Jogo <br>x <br> Outro Jogo</span>
         </div>
-        <div class="collapse" id="collapseExample2">
-          <div class="card card-body">
-            champions league
-          </div>
-        </div>
-        <div class="collapse" id="collapseExample3">
-          <div class="card card-body">
-            fa cup
-          </div>
+        <span id="botaoFechar" onclick="fechar()"><img src="imagens/close.png" alt="" style="width: 30px;"></span>
+        <div id="detalhesPartida">
+          
         </div>
         <!-- FIM PARTIDAS -->  
         <!-- INÍCIO RODAPÉ -->
@@ -188,7 +79,7 @@
             <img src="imagens/fundo_rodapé1.jpg" class="card-img" alt="..." style="border-top-right-radius: 0px; border-top-left-radius: 0px; height: 150px;">
             <div class="card-img-overlay">
                 <h5 class="card-title">Contato</h5>
-                <p class="card-text" style="text-align: right;">Site desenvolvido por Matheus Peretta, informações para contato: <a href="#">Clique Aqui</a></p>
+                <p class="card-text" style="text-align: right; text-indent: 0px;">Site desenvolvido por Matheus Peretta, informações para contato: <a href="#">Clique Aqui</a></p>
             </div>
         </div>
         <!-- FIM RODAPÉ -->

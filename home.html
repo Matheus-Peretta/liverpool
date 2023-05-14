@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/Liverpool_FC-logo-editado.png" type="image/x-icon">
   </head>
-  <body>
+  <body onload="aviso()">
     <div class="container-lg" id="corpo">
         <nav class="navbar fixed-top" style="background-color: rgb(192, 0, 0); padding: 10px;">
             <div class="container-fluid">
@@ -121,6 +121,9 @@
     </div>
     </div>
     <script>
+      function aviso(){
+        window.alert('Este site ainda está em construção')
+      }
       function clickFoto(){
             if(fg.style.width == "49vw"){
                 fg.style.width = "100vw"

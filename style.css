@@ -169,33 +169,43 @@ img.timesJogosTemporada{
     text-align: center;
     color: white;
 }
-#aparecerClassificacao{
-    display: none;
+div.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 10px;
 }
-.tabelaCamp{
-    border-radius: 10px;
-    color: rgb(192, 0, 0);
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(116, 0, 0);
-    width: 150px;
-    height: 30px;
-    padding: 2px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 5px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.426);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.441);
-}
-.tabelaCamp:hover{
-    color: rgb(87, 1, 1);
-    background-color: rgba(255, 255, 255, 0.649);
-}
-.imgTimesClassificacao{
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-#aparecerClassificacao li{
+.jogos{
+    background-color: rgb(192, 0, 0);
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.36);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.464);
+    align-self: flex-start;
+    font-size: min(10px, 3vw);   
+}
+div#detalhesPartida{
+    background-color: rgb(192, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+#botaoFechar{
+    flex-basis: 100%; 
+    display: flex; 
+    justify-content: right; 
+    display: none;
+    background-color: rgb(192, 0, 0);
 }
