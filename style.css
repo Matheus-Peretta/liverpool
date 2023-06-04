@@ -209,3 +209,21 @@ div#detalhesPartida{
     display: none;
     background-color: rgb(192, 0, 0);
 }
+
+@media screen and (min-width: 500px) and (max-width: 1000px){
+    #fg{
+        width: 100%;
+    }
+    #fg2{
+        width: 100%;
+    }
+    #doiscliques{
+        display: none;
+    }
+    p{
+        text-align: justify;
+        padding: 10px;
+        text-indent: 25px;
+        font-size: x-large;
+    }
+}
