@@ -226,4 +226,14 @@ div#detalhesPartida{
         text-indent: 25px;
         font-size: x-large;
     }
+    section.video{
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    embed{
+        width: 100vw;
+        height: 194px;
+    }
 }
